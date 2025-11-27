@@ -1,4 +1,4 @@
-package org.Refference_Object;
+package org.Construction_Injection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -6,17 +6,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /************************************************************************
  Developer Name : Harshvardhan Vathare
  Developer Content : harsh1234vathare@gmail.com
- Created On : 11/26/2025 8:54 PM
+ Created On : 11/27/2025 12:20 PM
  Project Name : Inject_Type
  ************************************************************************/
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello");
-
-        ApplicationContext context = new ClassPathXmlApplicationContext("refference_cfg.xml");
-        Student student = (Student) context.getBean("student");
-        Student student2 = (Student) context.getBean("student2");
-        System.out.println(student);
-        System.out.println(student2.getName()+" | "+student2.getStdCource().getCource_type());
+        ApplicationContext context = new ClassPathXmlApplicationContext("constructor_cfg.xml");
+        Person person =(Person) context.getBean("person1");
+        System.out.println(person);
     }
 }
