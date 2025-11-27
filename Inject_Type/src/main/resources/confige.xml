@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+    <bean class="org.studyeasy.User_Data" name="user1">
+        <property name="user_id" value="232323"/>
+
+        <property name="name" value="Soham Mohite"/>
+
+        <property name="email" value="soham@gmail.com"/>
+
+        <property name="age" value="45"/>
+
+    </bean>
+
+    <bean class="org.studyeasy.User_Data" name="user2">
+        <property name="user_id" value="232324"/>
+
+        <property name="name" value="Rakesh Mohite"/>
+
+        <property name="email" value="rakesh@gmail.com"/>
+
+        <property name="age" value="31"/>
+
+    </bean>
+
+</beans>

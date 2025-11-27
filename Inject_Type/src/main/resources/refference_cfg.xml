@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    This is the Object 1-->
+    <bean class="org.Refference_Object.Std_Cource" name="std_cource1" >
+        <property name="cource_type" value="Java Devolepment" />
+        <property name="duration" value="6-months" />
+    </bean>
+
+    <bean class="org.Refference_Object.Student" name="student">
+        <property name="name" value="Harsh Vathare" />
+
+        <property name="city" value="Kolhapur" />
+
+        <property name="stdCource" ref="std_cource1" />
+    </bean>
+
+<!--    This is Object 2-->
+    <bean class="org.Refference_Object.Std_Cource" name="std_cource2" >
+        <property name="cource_type" value="Python Devolepment" />
+        <property name="duration" value="3-months" />
+    </bean>
+
+    <bean class="org.Refference_Object.Student" name="student2">
+        <property name="name" value="Raju Vathare" />
+
+        <property name="city" value="Rendal" />
+
+        <property name="stdCource" ref="std_cource2" />
+    </bean>
+
+</beans>

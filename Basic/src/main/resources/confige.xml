@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    creating Beans -->
+    <bean class="org.studyeasy.Student" name="Student1">
+        <property name="StudentId">
+            <value>101010</value>
+        </property>
+
+        <property name="StudentName">
+            <value>Harshvardhan Vathare</value>
+        </property>
+
+        <property name="StudentAddress">
+            <value>Ramnager Rendal</value>
+        </property>
+    </bean>
+
+</beans>

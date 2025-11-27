@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+    <bean class="org.collection.Costmer" name="costmer1">
+        <property name="name" value="HarshVardhan Vathare" />
+
+        <property name="phone_numbers">
+            <list>
+                <value>9595805740</value>
+                <value>9595676550</value>
+                <value>9595234540</value>
+                <value>9595805734</value>
+                <null/>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <set>
+                <value>Ramnager Rendal</value>
+                <value>  Rangoli</value>
+                <value>  Kolhapur</value>
+                <value>  Mankapur</value>
+            </set>
+        </property>
+
+        <property name="cources">
+            <map>
+                <entry key="java" value="6-months"/>
+                <entry key="python" value="4-months"/>
+                <entry key="c++" value="3-months"/>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>
