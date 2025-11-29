@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.studyeasy.config_type.using_Annotation.Kachori" name="kachori1">
+        <property name="count" value="5"/>
+        <property name="price" value="100"/>
+
+    </bean>
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+</beans>
