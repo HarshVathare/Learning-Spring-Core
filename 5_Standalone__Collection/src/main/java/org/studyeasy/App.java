@@ -1,5 +1,6 @@
 package org.studyeasy;
 
+import org.StereoType_Annotation.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.standAlone_collection.Person;
@@ -20,5 +21,8 @@ public class App
         System.out.println(person);
         System.out.println(person.getCourse().getClass().getName());
 
+        System.out.println();
+        Student student = context.getBean("student", Student.class);
+        System.out.println(student);
     }
 }
