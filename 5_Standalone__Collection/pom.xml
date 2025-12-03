@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.studyeasy</groupId>
-  <artifactId>3_Spring_Bean</artifactId>
+  <artifactId>5_Standalone__Collection</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>3_Spring_Bean</name>
+  <name>5_Standalone__Collection</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,6 +15,7 @@
   </properties>
 
   <dependencies>
+
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -27,12 +28,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>7.0.0-M8</version>
-    </dependency>
-
-    <dependency>
-      <groupId>jakarta.annotation</groupId>
-      <artifactId>jakarta.annotation-api</artifactId>
-      <version>2.1.1</version>
     </dependency>
 
 
